@@ -16,6 +16,10 @@
   dct:modified "2015-03-19" ;
   rdfs:seeAlso <http://microformats.org/wiki/microformats2-parsing-rdf> .
 
+###############
+# Classes     #
+###############
+
 mf2:h-adr
   rdf:type rdfs:Class ;
   rdfs:label "h-adr"@en ;
@@ -105,63 +109,85 @@ mf2:h-review-aggregate
   rdfs:seeAlso wiki:microformats-2#h-review-aggregate ;
   rdfs:isDefinedBy <http://microformats.org/profile/> .
 
-mf2:p-post-office-box
+###############
+# Properties  #
+#
+# Todo:
+# * Domains & ranges
+# * Map to existing with sameAs (FOAF, DC, VCard)
+###############
+
     rdf:type rdf:Property ;
-    rdfs:label "p-post-office-box"@en ;
+    rdfs:label "p-"@en ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
-mf2:p-extended-address
-    rdf:type rdf:Property ;
-    rdfs:label "p-extended-address"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-street-address
-    rdf:type rdf:Property ;
-    rdfs:label "p-street-address"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-locality
-    rdf:type rdf:Property ;
-    rdfs:label "p-locality"@en ;
-    owl:sameAs foaf:based_near ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-region
-    rdf:type rdf:Property ;
-    rdfs:label "p-region"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-postal-code
-    rdf:type rdf:Property ;
-    rdfs:label "p-postal-code"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-country-name
-    rdf:type rdf:Property ;
-    rdfs:label "p-country-name"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-label
-    rdf:type rdf:Property ;
-    rdfs:label "p-label"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-geo
-    rdf:type rdf:Property ;
-    rdfs:label "p-geo"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-latitude
-    rdf:type rdf:Property ;
-    rdfs:label "p-latitude"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-longitude
-    rdf:type rdf:Property ;
-    rdfs:label "p-longitude"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
-
-mf2:p-altitude
-    rdf:type rdf:Property ;
-    rdfs:label "p-altitude"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+dt-anniversary
+dt-bday 
+dt-duration 
+dt-end 
+dt-published 
+Dt-reviewed
+dt-start 
+dt-updated 
+e-content
+e-description 
+e-instructions
+p-additional-name 
+p-adr 
+p-affiliation
+p-altitude
+p-author 
+p-best
+p-brand
+p-category 
+p-contact
+p-count
+p-country-name 
+p-description 
+p-education
+p-experience
+p-extended-address 
+p-family-name 
+p-gender-identity
+p-geo 
+p-given-name 
+p-honorific-prefix 
+p-honorific-suffix 
+p-ingredient
+p-item
+p-job-title
+p-label 
+p-latitude 
+p-locality 
+p-location 
+p-longitude 
+p-name 
+p-nickname 
+p-note 
+p-nutrition
+p-org 
+p-post-office-box 
+p-postal-code 
+p-price
+p-rating
+p-region 
+p-review
+p-reviewer
+p-role 
+p-sex
+p-skill
+p-sort-string 
+p-street-address 
+p-summary
+p-tel 
+p-votes
+p-worst
+p-yield
+u-email 
+u-identifier
+u-impp
+u-key 
+u-logo 
+u-photo 
+u-uid 
+u-url
