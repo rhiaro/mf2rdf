@@ -1,4 +1,5 @@
-@prefix mf2: <http://microformats.org/wiki/microformats-2#>
+@prefix mf2: <http://microformats.org/wiki/microformats-2#> .
+@prefix wiki: <http://microformats.org/wiki/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -8,10 +9,25 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://microformats.org/wiki/microformats-2#> a owl:Ontology .
-<http://microformats.org/wiki/microformats-2#> dct:title "Microformats2" .
-<http://microformats.org/wiki/microformats-2#> owl:versionInfo "Version 0.1" .
-<http://microformats.org/wiki/microformats-2#> dct:description "Microformats2 is the simplest way to markup structured information in HTML. Microformats2 improves ease of use and implementation for both authors (publishers) and developers (parser implementers)." .
-<http://microformats.org/wiki/microformats-2#> dct:created "2015-03-19" .
-<http://microformats.org/wiki/microformats-2#> dct:modified "2015-03-19" .
+<http://microformats.org/wiki/microformats-2#>
+  a owl:Ontology ;
+  dct:title "Microformats2" ;
+  owl:versionInfo "2" ;
+  dct:description "Microformats2 is the simplest way to markup structured information in HTML. Microformats2 improves ease of use and implementation for both authors (publishers) and developers (parser implementers)." ;
+  dct:created "2015-03-19" ;
+  dct:modified "2015-03-19" .
 
+mf2:h-card
+  rdf:type rdfs:Class ;
+  rdfs:label "h-card"@en ;
+  rdfs:comment "An h-card is a description of a person or an organization."@en ;
+  foaf:isPrimaryTopicOf wiki:h-card ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-adr
+  rdf:type rdfs:Class ;
+  rdfs:label "h-adr"@en ;
+  rdfs:comment "The h-adr microformat is for marking up structured locations such as addresses, physical and/or postal. This is an update to adr."@en ;
+  foaf:isPrimaryTopicOf wiki:h-adr ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+  
