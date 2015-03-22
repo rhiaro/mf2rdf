@@ -3,6 +3,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix as2: <http://www.w3.org/ns/activitystreams#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix sioc: <http://rdfs.org/sioc/types#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -119,92 +122,128 @@ mf2:h-review-aggregate
 
 mf2:dt-anniversary
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-anniversary"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs vcard:anniversary ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-bday
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-bday"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs vcard:bday ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-duration
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-duration"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs as2:duration ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-end 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-end"@en ;
+    owl:sameAs as2:endTime ;
+    rdfs:range xsd:DateTime ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-published 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-published"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs dc:published, as2:published ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-reviewed
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-reviewed"@en ;
+    rdfs:comment "The datetime at which something was reviewed."
+    rdfs:range xsd:DateTime ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-start 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-start"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs as2:startTime ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:dt-updated 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "dt-updated"@en ;
+    rdfs:range xsd:DateTime ;
+    owl:sameAs dc:modified, as2:updated ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:e-content
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "e-content"@en ;
+    rdfs:comment "The contents of something like a post, including markup and embedded elements." ;
+    owl:sameAs as2:content ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:e-description 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "e-description"@en ;
+    rdfs:comment "A piece of text about something, according to somebody. (Eg. description or review of a product)."@en ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:e-instructions
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "e-instructions"@en ;
+    rdfs:comment "The method of the recipe." ;
+    rdfs:domain mf2:h-recipe ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-additional-name 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-additional-name"@en ;
+    rdfs:comment "An additional name, like a middle name or middle initial."@en ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-adr 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-adr"@en ;
+    owl:sameAs as2:hasAddress, vcard:hasAddress ;
+    rdfs:domain mf2:h-card ;
+    rdfs:range mf2:h-adr ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-affiliation
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-affiliation"@en ;
+    rdfs:comment "An affiliation with an organisation."@en ;
+    rdfs:domain mf2:h-card ; # / foaf:Agent
+    rdfs:range mf2:h-card ; # / foaf:Organization
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-altitude
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-altitude"@en ;
+    owl:sameAs as2:altitude ;
+    # domain: h-card / h-adr / h-geo
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-author 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-author"@en ;
+    owl:sameAs as2:attributedTo ;
+    # domain h-entry / h-recipe
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-best
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-best"@en ;
+    rdfs:comment "Define best rating value. Can be numerically lower than worst."@en ;
+    # domain h-review / h-review-aggregate
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-brand
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-brand"@en ;
+    rdfs:comment "Manufacturer, can also be a nested h-card."@en
+    rdfs:domain mf2:h-product ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-category 
@@ -360,6 +399,8 @@ mf2:p-price
 mf2:p-rating
     rdf:type rdf:Property ;
     rdfs:label "p-"@en ;
+    owl:sameAs as2:rating ;
+    # Note: as2 rating has additional restrictions that don't apply in mf2
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-region 
