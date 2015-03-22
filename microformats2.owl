@@ -17,13 +17,6 @@
   dct:created "2015-03-19" ;
   dct:modified "2015-03-19" .
 
-mf2:h-card
-  rdf:type rdfs:Class ;
-  rdfs:label "h-card"@en ;
-  rdfs:comment "An h-card is a description of a person or an organization."@en ;
-  foaf:isPrimaryTopicOf wiki:h-card ;
-  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
-
 mf2:h-adr
   rdf:type rdfs:Class ;
   rdfs:label "h-adr"@en ;
@@ -31,3 +24,10 @@ mf2:h-adr
   foaf:isPrimaryTopicOf wiki:h-adr ;
   rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
   
+mf2:h-card
+  rdf:type rdfs:Class ;
+  rdfs:label "h-card"@en ;
+  rdfs:comment "An h-card is a description of a person or an organization."@en ;
+  foaf:isPrimaryTopicOf wiki:h-card ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
