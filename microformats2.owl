@@ -31,3 +31,71 @@ mf2:h-card
   foaf:isPrimaryTopicOf wiki:h-card ;
   rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
 
+mf2:h-entry
+  rdf:type rdfs:Class ;
+  rdfs:label "h-entry"@en ;
+  rdfs:comment "The h-entry microformat is for marking up syndicatable content such as blog posts, notes, articles, comments, photos and similar. This is an update to hAtom."@en ;
+  foaf:isPrimaryTopicOf wiki:h-entry ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-event
+  rdf:type rdfs:Class ;
+  rdfs:label "h-event"@en ;
+  rdfs:comment "The h-event microformat is for marking up events. This is an update to hCalendar."@en ;
+  foaf:isPrimaryTopicOf wiki:h-event ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-geo
+  rdf:type rdfs:Class ;
+  rdfs:label "h-geo"@en ;
+  rdfs:comment "The h-geo microformat is for marking up WGS84 geophysical coordinates. This is an update to geo."@en ;
+  foaf:isPrimaryTopicOf wiki:h-geo ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-item
+  rdf:type rdfs:Class ;
+  rdfs:label "h-item"@en ;
+  rdfs:comment "The h-item microformat is for marking up the item of an h-review or h-product. This is an update to part of hReview."@en ;
+  foaf:isPrimaryTopicOf wiki:h-item ;
+ 
+mf2:h-product
+  rdf:type rdfs:Class ;
+  rdfs:label "h-product"@en ;
+  rdfs:comment "The h-product microformat is for marking up products. This is an update to hProduct."@en ;
+  foaf:isPrimaryTopicOf wiki:h-product ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-recipe
+  rdf:type rdfs:Class ;
+  rdfs:label "h-recipe"@en ;
+  rdfs:comment "The h-recipe microformat is for marking up food recipes. This is an update to hRecipe."@en ;
+  foaf:isPrimaryTopicOf wiki:h-recipe ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-resume
+  rdf:type rdfs:Class ;
+  rdfs:label "h-resume"@en ;
+  rdfs:comment "The h-resume microformat is for marking up resumes. This is an update to hResume."@en ;
+  foaf:isPrimaryTopicOf wiki:h-resume ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-review
+  rdf:type rdfs:Class ;
+  rdfs:label "h-review"@en ;
+  rdfs:comment "The h-review microformat is for marking up reviews. This is an update to hReview. See also h-item."@en ;
+  foaf:isPrimaryTopicOf wiki:h-review ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-review-aggregate
+  rdf:type rdfs:Class ;
+  rdfs:label "h-review-aggregate"@en ;
+  rdfs:comment "The h-review-aggregate microformat is for marking up aggregate reviews of a single item. This is an update to hreview-aggregate. See also h-item."@en ;
+  foaf:isPrimaryTopicOf wiki:h-review-aggregate ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
+
+mf2:h-review-aggregate
+  rdf:type rdfs:Class ;
+  rdfs:label "h-review-aggregate"@en ;
+  rdfs:comment "The h-review-aggregate microformat is for marking up aggregate reviews of a single item. This is an update to hreview-aggregate. See also h-item."@en ;
+  foaf:isPrimaryTopicOf wiki:h-review-aggregate ;
+  rdfs:isDefinedBy <http://microformats.org/wiki/microformats-2#> .
