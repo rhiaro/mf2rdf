@@ -276,52 +276,75 @@ mf2:p-country-name
     
 mf2:p-description 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-description"@en ;
+    rdfs:comment "Description of an event."@en
+    rdfs:domain mf2:h-event ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-education
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-education"@en ;
+    rdfs:comment "An education h-calendar event, years, nested h-card of the school, location."@en
+    rdfs:domain mf2:h-resume ;
+    # range h-event (years) and h-card (school, location)
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-experience
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-experience"@en ;
+    rdfs:comment "A job or other professional experience h-calendar event, years, nested h-card of the organization, location, job-title."@en
+    rdfs:domain mf2:h-resume ;
+    # range h-event (years) and h-card (school, location)
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-extended-address 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-extended-address"@en ;
+    rdfs:comment "Deprecated in Vcard." ;
+    owl:sameAs vcard:extended-address ;
+    # domain h-card / h-adr
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-family-name 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-family-name"@en ;
+    rdfs:domain mf2:hcard ;
+    owl:sameAs foaf:familyName, vcard:family-name ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-gender-identity
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-gender-identity"@en ;
+    owl:sameAs vcard:hasGender ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-geo 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-geo"@en ;
+    rdfs:domain mf2:h-event ;
+    rdfs:range mf2:h-geo ;
+    owl:sameAs vcard:hasGeo ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-given-name 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-given-name"@en ;
+    rdfs:domain mf2:h-card ;
+    owl:sameAs foaf:givenName, vcard:given-name ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-honorific-prefix 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-honorific-prefix"@en ;
+    rdfs:domain mf2:h-card ;
+    owl:sameAs vcard:honorific-prefix, foaf:title ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-honorific-suffix 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-honorific-suffix"@en ;
+    rdfs:domain mf2:h-card ;
+    owl:sameAs vcard:honorific-suffix ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-ingredient
