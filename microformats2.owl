@@ -248,22 +248,30 @@ mf2:p-brand
     
 mf2:p-category 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-category"@en ;
+    rdfs:comment "Freeform categories or tags."@en
+    owl:sameAs sioc:topic, vcard:hasCategory, as2:tag, foaf:topic ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-contact
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-contact"@en ;
+    rdfs:comment "Current contact info in an h-card."@en
+    rdfs:domain mf2:h-resume ;
+    rdfs:range mf2:h-card ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-count
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-count"@en ;
+    rdfs:comment "Number of reviews aggregated."@en
+    rdfs:domain mf2:h-review-aggregate ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-country-name 
     rdf:type rdf:Property ;
-    rdfs:label "p-"@en ;
+    rdfs:label "p-country-name"@en ;
+    owl:sameAs vcard:hasCountryName ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-description 
