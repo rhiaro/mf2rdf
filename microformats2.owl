@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sioc: <http://rdfs.org/sioc/types#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://microformats.org/profile/>
@@ -29,6 +29,7 @@ mf2:h-card
   rdfs:label "h-card"@en ;
   rdfs:comment "An h-card is a description of a person or an organization."@en ;
   foaf:isPrimaryTopicOf wiki:h-card ;
+  owl:sameAs vcard:VCard, foaf:Agent ;
   rdfs:seeAlso wiki:microformats-2#h-card ;
   rdfs:isDefinedBy <http://microformats.org/profile/> .
 
@@ -103,3 +104,64 @@ mf2:h-review-aggregate
   foaf:isPrimaryTopicOf wiki:h-review-aggregate ;
   rdfs:seeAlso wiki:microformats-2#h-review-aggregate ;
   rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-post-office-box
+    rdf:type rdf:Property ;
+    rdfs:label "p-post-office-box"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-extended-address
+    rdf:type rdf:Property ;
+    rdfs:label "p-extended-address"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-street-address
+    rdf:type rdf:Property ;
+    rdfs:label "p-street-address"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-locality
+    rdf:type rdf:Property ;
+    rdfs:label "p-locality"@en ;
+    owl:sameAs foaf:based_near ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-region
+    rdf:type rdf:Property ;
+    rdfs:label "p-region"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-postal-code
+    rdf:type rdf:Property ;
+    rdfs:label "p-postal-code"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-country-name
+    rdf:type rdf:Property ;
+    rdfs:label "p-country-name"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-label
+    rdf:type rdf:Property ;
+    rdfs:label "p-label"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-geo
+    rdf:type rdf:Property ;
+    rdfs:label "p-geo"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-latitude
+    rdf:type rdf:Property ;
+    rdfs:label "p-latitude"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-longitude
+    rdf:type rdf:Property ;
+    rdfs:label "p-longitude"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:p-altitude
+    rdf:type rdf:Property ;
+    rdfs:label "p-altitude"@en ;
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
