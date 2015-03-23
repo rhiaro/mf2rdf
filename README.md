@@ -2,6 +2,14 @@
 
 Microformats2 as lightweight RDF ontology.
 
-Useful notes from Tom Morris at [Parsing RDF on MF2 wiki](http://microformats.org/wiki/microformats2-parsing-rdf).
+**Useful docs:**
+
+* [Parsing RDF on MF2 wiki](http://microformats.org/wiki/microformats2-parsing-rdf) by Tom Morris.
+* [MF2 to AS2.0 mapping](https://www.w3.org/wiki/Activity_Streams/Microformats_Mapping) by jasnell and tantek.
 
 Prefix is `http://microformats.org/profile/` as per [MF2 RDF wiki page](http://microformats.org/wiki/microformats2-parsing-rdf).
+
+## Notes
+
+* Is `dt-reviewed` same as `dt-published`?
+* 
