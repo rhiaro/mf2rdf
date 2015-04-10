@@ -15,7 +15,7 @@
 <http://microformats.org/profile/>
   a owl:Ontology ;
   dct:title "Microformats2" ;
-  owl:versionInfo "2" ;
+  owl:versionInfo "0.1" ;
   dct:description "Microformats2 is the simplest way to markup structured information in HTML. Microformats2 improves ease of use and implementation for both authors (publishers) and developers (parser implementers)." ;
   dct:created "2015-03-19" ;
   dct:modified "2015-03-19" ;
@@ -118,7 +118,6 @@ mf2:h-review-aggregate
 # Properties  #
 #
 # Todo:
-# * Domains & ranges
 # * Map to existing with sameAs (FOAF, DC, VCard, AS2.0)
 ###############
 
@@ -195,7 +194,6 @@ mf2:e-instructions
     rdf:type rdf:Property ;
     rdfs:label "e-instructions"@en ;
     rdfs:comment "The method of the recipe." ;
-    rdfs:domain mf2:h-recipe ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-additional-name 
@@ -208,44 +206,36 @@ mf2:p-adr
     rdf:type rdf:Property ;
     rdfs:label "p-adr"@en ;
     owl:sameAs as2:hasAddress, vcard:hasAddress ;
-    rdfs:domain mf2:h-card ;
-    rdfs:range mf2:h-adr ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-affiliation
     rdf:type rdf:Property ;
     rdfs:label "p-affiliation"@en ;
     rdfs:comment "An affiliation with an organisation."@en ;
-    rdfs:domain mf2:h-card ; # / foaf:Agent
-    rdfs:range mf2:h-card ; # / foaf:Organization
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-altitude
     rdf:type rdf:Property ;
     rdfs:label "p-altitude"@en ;
     owl:sameAs as2:altitude ;
-    # domain: h-card / h-adr / h-geo
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-author 
     rdf:type rdf:Property ;
     rdfs:label "p-author"@en ;
     owl:sameAs as2:attributedTo ;
-    # domain h-entry / h-recipe
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-best
     rdf:type rdf:Property ;
     rdfs:label "p-best"@en ;
     rdfs:comment "Define best rating value. Can be numerically lower than worst."@en ;
-    # domain h-review / h-review-aggregate
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-brand
     rdf:type rdf:Property ;
     rdfs:label "p-brand"@en ;
     rdfs:comment "Manufacturer, can also be a nested h-card."@en ;
-    rdfs:domain mf2:h-product ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-category 
@@ -259,15 +249,12 @@ mf2:p-contact
     rdf:type rdf:Property ;
     rdfs:label "p-contact"@en ;
     rdfs:comment "Current contact info in an h-card."@en ;
-    rdfs:domain mf2:h-resume ;
-    rdfs:range mf2:h-card ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-count
     rdf:type rdf:Property ;
     rdfs:label "p-count"@en ;
     rdfs:comment "Number of reviews aggregated."@en ;
-    rdfs:domain mf2:h-review-aggregate ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-country-name 
@@ -280,23 +267,18 @@ mf2:p-description
     rdf:type rdf:Property ;
     rdfs:label "p-description"@en ;
     rdfs:comment "Description of an event."@en ;
-    rdfs:domain mf2:h-event ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-education
     rdf:type rdf:Property ;
     rdfs:label "p-education"@en ;
     rdfs:comment "An education h-calendar event, years, nested h-card of the school, location."@en ;
-    rdfs:domain mf2:h-resume ;
-    # range h-event (years) and h-card (school, location)
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-experience
     rdf:type rdf:Property ;
     rdfs:label "p-experience"@en ;
     rdfs:comment "A job or other professional experience h-calendar event, years, nested h-card of the organization, location, job-title."@en ;
-    rdfs:domain mf2:h-resume ;
-    # range h-event (years) and h-card (school, location)
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-extended-address 
@@ -304,13 +286,11 @@ mf2:p-extended-address
     rdfs:label "p-extended-address"@en ;
     rdfs:comment "Deprecated in Vcard." ;
     owl:sameAs vcard:extended-address ;
-    # domain h-card / h-adr
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-family-name 
     rdf:type rdf:Property ;
     rdfs:label "p-family-name"@en ;
-    rdfs:domain mf2:hcard ;
     owl:sameAs foaf:familyName, vcard:family-name ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -323,29 +303,24 @@ mf2:p-gender-identity
 mf2:p-geo 
     rdf:type rdf:Property ;
     rdfs:label "p-geo"@en ;
-    rdfs:domain mf2:h-event ;
-    rdfs:range mf2:h-geo ;
     owl:sameAs vcard:hasGeo ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-given-name 
     rdf:type rdf:Property ;
     rdfs:label "p-given-name"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs foaf:givenName, vcard:given-name ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-honorific-prefix 
     rdf:type rdf:Property ;
     rdfs:label "p-honorific-prefix"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:honorific-prefix, foaf:title ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-honorific-suffix 
     rdf:type rdf:Property ;
     rdfs:label "p-honorific-suffix"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:honorific-suffix ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -353,14 +328,12 @@ mf2:p-ingredient
     rdf:type rdf:Property ;
     rdfs:label "p-ingredient"@en ;
     rdfs:comment "Ddescribes one or more ingredients used in the recipe."@en ;
-    rdfs:domain mf2:h-recipe ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-item
     rdf:type rdf:Property ;
     rdfs:label "p-item"@en ;
     rdfs:comment "The thing been reviewed i.e. business or person (h-card), event (h-event), place (h-adr or h-geo), product (h-product), website, url, or other item (h-item)."@en ;
-    rdfs:domain mf2:h-review ;
     # range h-card / h-event / h-adr / h-geo / h-product / website / url / h-item
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -368,7 +341,6 @@ mf2:p-job-title
     rdf:type rdf:Property ;
     rdfs:label "p-job-title"@en ;
     rdfs:comment "Previously 'title' in hCard, disambiguated."@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:title ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -376,27 +348,23 @@ mf2:p-label
     rdf:type rdf:Property ;
     rdfs:label "p-label"@en ;
     rdfs:comment "Wiki says 'new in vCard4' but vCard4 says it's deprecated, and in any case was for address labels."@en ;
-    rdfs:domain mf2:h-card ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-latitude 
     rdf:type rdf:Property ;
     rdfs:label "p-latitude"@en ;
     owl:sameAs vcard:latitude, as2:latitude ;
-    # domain h-event / h-geo / h-adr
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-locality 
     rdf:type rdf:Property ;
     rdfs:label "p-locality"@en ;
-    # domain h-adr / h-card 
     owl:sameAs foaf:based_near, vcard:locality ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-location 
     rdf:type rdf:Property ;
     rdfs:label "p-location"@en ;
-    rdfs:domain mf2:h-event ;
     owl:sameAs as2:location ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -404,7 +372,6 @@ mf2:p-longitude
     rdf:type rdf:Property ;
     rdfs:label "p-longitude"@en ;
     owl:sameAs as2:longitude, vcard:longitude ;
-    # domain h-event / h-geo / h-adr
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-name 
@@ -417,7 +384,6 @@ mf2:p-name
 mf2:p-nickname 
     rdf:type rdf:Property ;
     rdfs:label "p-nickname"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:nickname, foaf:nick ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -425,7 +391,6 @@ mf2:p-note
     rdf:type rdf:Property ;
     rdfs:label "p-note"@en ;
     rdfs:comment "Not actually sure what this is." ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs as2:content ; # controversial?
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -433,27 +398,23 @@ mf2:p-nutrition
     rdf:type rdf:Property ;
     rdfs:label "p-nutrition"@en ;
     rdfs:comment "Nutritional information like calories, fat, dietary fiber etc."@en ;
-    rdfs:domain mf2:h-recipe ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-org 
     rdf:type rdf:Property ;
     rdfs:label "p-org"@en ;
     rdfs:comment "A related organisation"@en ;
-    rdfs:domain mf2:h-card ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-post-office-box 
     rdf:type rdf:Property ;
     rdfs:label "p-post-office-box"@en ;
-    # domain h-card / h-adr
     owl:sameAs vcard:post-office-box ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-postal-code 
     rdf:type rdf:Property ;
     rdfs:label "p-postal-code"@en ;
-    # domain h-card / h-adr
     owl:sameAs vcard:postal-code ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -461,7 +422,6 @@ mf2:p-price
     rdf:type rdf:Property ;
     rdfs:label "p-price"@en ;
     rdfs:comment "Retail price of the product."@en ;
-    rdfs:domain mf2:h-product ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-rating
@@ -480,7 +440,6 @@ mf2:p-region
 mf2:p-review
     rdf:type rdf:Property ;
     rdfs:label "p-region"@en ;
-    # domain h-adr / h-card
     owl:sameAs vcard:region ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -488,8 +447,6 @@ mf2:p-reviewer
     rdf:type rdf:Property ;
     rdfs:label "p-reviewer"@en ;
     rdfs:comment "Person who authored the review."@en ;
-    rdfs:domain mf2:h-review;
-    rdfs:range mf2:h-card ; # ? different to author?
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-role 
@@ -509,14 +466,12 @@ mf2:p-skill
     rdf:type rdf:Property ;
     rdfs:label "p-skill"@en ;
     rdfs:comment "A skill or ability, optionally including level and/or duration of experience."@en ;
-    rdfs:domain mf2:h-resume ; # hmmmmmm
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-sort-string 
     rdf:type rdf:Property ;
     rdfs:label "p-sort-string"@en ;
     owl:sameAs vcard:sort-string ;
-    rdfs:domain mf2:h-card ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-street-address 
@@ -535,7 +490,6 @@ mf2:p-summary
 mf2:p-tel 
     rdf:type rdf:Property ;
     rdfs:label "p-tel"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:tel, foaf:phone ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
@@ -543,27 +497,23 @@ mf2:p-votes
     rdf:type rdf:Property ;
     rdfs:label "p-votes"@en ;
     rdfs:comment "Number of reviewers who have rated the product, thus contributing to the average rating."@en ;
-    rdfs:domain mf2:h-review-aggregate ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-worst
     rdf:type rdf:Property ;
     rdfs:label "p-worst"@en ;
     rdfs:comment "Define worst rating value. can be numerically higher than best."@en ;
-    # domain h-review / h-review-aggregate
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:p-yield
     rdf:type rdf:Property ;
     rdfs:label "p-yield"@en ;
     rdfs:comment "Specifies the quantity produced by the recipe, like how many persons it satisfyies."@en ;
-    rdfs:domain mf2:h-recipe ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
     
 mf2:u-email
     rdf:type rdf:Property ;
     rdfs:label "u-email"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs foaf:mbox, vcard:email ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
@@ -571,7 +521,6 @@ mf2:u-identifier
     rdf:type rdf:Property ;
     rdfs:label "u-identifier"@en ;
     rdfs:comment "Includes type (e.g. mpn, upc, isbn, issn, sn, vin, sku etc.) and value."@en ;
-    rdfs:domain mf2:h-product ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:u-impp
@@ -589,21 +538,18 @@ mf2:u-key
 mf2:u-logo 
     rdf:type rdf:Property ;
     rdfs:label "u-logo"@en ;
-    rdfs:domain mf2:h-card ;
     owl:sameAs vcard:hasLogo, foaf:logo ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:u-photo
     rdf:type rdf:Property ;
     rdfs:label "u-photo"@en ;
-    # domain h-product / h-recipe / h-review-aggregate / h-card / basically everything?
     owl:sameAs as2:image, vcard:hasPhoto, foaf:depiction ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
 mf2:u-uid 
     rdf:type rdf:Property ;
     rdfs:label "u-uid"@en ;
-    #domain h-card / h-entry
     owl:sameAs as2:id, vcard:hasUID ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
 
