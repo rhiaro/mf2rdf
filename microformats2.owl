@@ -1,4 +1,4 @@
-@prefix mf2: <http://microformats.org/profile/> .
+@prefix mf2: <http://microformats.org/terms/> .
 @prefix wiki: <http://microformats.org/wiki/> .
 @prefix wikimf2: <http://microformats.org/wiki/microformats-2#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -12,7 +12,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://microformats.org/profile/>
+<http://microformats.org/terms/>
   a owl:Ontology ;
   dct:title "Microformats2" ;
   owl:versionInfo "0.2" ;
@@ -31,7 +31,7 @@ mf2:h-adr
   rdfs:comment "The h-adr microformat is for marking up structured locations such as addresses, physical and/or postal. This is an update to adr."@en ;
   foaf:isPrimaryTopicOf wiki:h-adr ;
   rdfs:seeAlso wikimf2:h-adr ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
   
 mf2:h-card
   rdf:type rdfs:Class ;
@@ -40,7 +40,7 @@ mf2:h-card
   foaf:isPrimaryTopicOf wiki:h-card ;
   owl:sameAs vcard:VCard, foaf:Agent ;
   rdfs:seeAlso wikimf2:h-card ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-entry
   rdf:type rdfs:Class ;
@@ -48,7 +48,7 @@ mf2:h-entry
   rdfs:comment "The h-entry microformat is for marking up syndicatable content such as blog posts, notes, articles, comments, photos and similar. This is an update to hAtom."@en ;
   foaf:isPrimaryTopicOf wiki:h-entry ;  
   rdfs:seeAlso wikimf2:h-entry ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-event
   rdf:type rdfs:Class ;
@@ -56,7 +56,7 @@ mf2:h-event
   rdfs:comment "The h-event microformat is for marking up events. This is an update to hCalendar."@en ;
   foaf:isPrimaryTopicOf wiki:h-event ;
   rdfs:seeAlso wikimf2:h-event ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-geo
   rdf:type rdfs:Class ;
@@ -64,7 +64,7 @@ mf2:h-geo
   rdfs:comment "The h-geo microformat is for marking up WGS84 geophysical coordinates. This is an update to geo."@en ;
   foaf:isPrimaryTopicOf wiki:h-geo ;
   rdfs:seeAlso wikimf2:h-geo ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-item
   rdf:type rdfs:Class ;
@@ -72,7 +72,7 @@ mf2:h-item
   rdfs:comment "The h-item microformat is for marking up the item of an h-review or h-product. This is an update to part of hReview."@en ;
   foaf:isPrimaryTopicOf wiki:h-item ;
   rdfs:seeAlso wikimf2:h-item ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
  
 mf2:h-product
   rdf:type rdfs:Class ;
@@ -80,7 +80,7 @@ mf2:h-product
   rdfs:comment "The h-product microformat is for marking up products. This is an update to hProduct."@en ;
   foaf:isPrimaryTopicOf wiki:h-product ;
   rdfs:seeAlso wikimf2:h-product ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-recipe
   rdf:type rdfs:Class ;
@@ -88,7 +88,7 @@ mf2:h-recipe
   rdfs:comment "The h-recipe microformat is for marking up food recipes. This is an update to hRecipe."@en ;
   foaf:isPrimaryTopicOf wiki:h-recipe ;
   rdfs:seeAlso wikimf2:h-recipe ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-resume
   rdf:type rdfs:Class ;
@@ -96,7 +96,7 @@ mf2:h-resume
   rdfs:comment "The h-resume microformat is for marking up resumes. This is an update to hResume."@en ;
   foaf:isPrimaryTopicOf wiki:h-resume ;
   rdfs:seeAlso wikimf2:h-resume ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-review
   rdf:type rdfs:Class ;
@@ -104,7 +104,7 @@ mf2:h-review
   rdfs:comment "The h-review microformat is for marking up reviews. This is an update to hReview. See also h-item."@en ;
   foaf:isPrimaryTopicOf wiki:h-review ;
   rdfs:seeAlso wikimf2:h-review ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:h-review-aggregate
   rdf:type rdfs:Class ;
@@ -112,7 +112,7 @@ mf2:h-review-aggregate
   rdfs:comment "The h-review-aggregate microformat is for marking up aggregate reviews of a single item. This is an update to hreview-aggregate. See also h-item."@en ;
   foaf:isPrimaryTopicOf wiki:h-review-aggregate ;
   rdfs:seeAlso wikimf2:h-review-aggregate ;
-  rdfs:isDefinedBy <http://microformats.org/profile/> .
+  rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 ###############
 # Properties  #
@@ -126,303 +126,303 @@ mf2:dt-anniversary
     rdfs:label "dt-anniversary"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs vcard:anniversary ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-bday
     rdf:type rdf:Property ;
     rdfs:label "dt-bday"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs vcard:bday ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-duration
     rdf:type rdf:Property ;
     rdfs:label "dt-duration"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs as2:duration ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-end 
     rdf:type rdf:Property ;
     rdfs:label "dt-end"@en ;
     owl:sameAs as2:endTime ;
     rdfs:range xsd:DateTime ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-published 
     rdf:type rdf:Property ;
     rdfs:label "dt-published"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs dc:published, as2:published ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-reviewed
     rdf:type rdf:Property ;
     rdfs:label "dt-reviewed"@en ;
     rdfs:comment "The datetime at which something was reviewed." ;
     rdfs:range xsd:DateTime ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-start 
     rdf:type rdf:Property ;
     rdfs:label "dt-start"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs as2:startTime ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:dt-updated 
     rdf:type rdf:Property ;
     rdfs:label "dt-updated"@en ;
     rdfs:range xsd:DateTime ;
     owl:sameAs dc:modified, as2:updated ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:e-content
     rdf:type rdf:Property ;
     rdfs:label "e-content"@en ;
     rdfs:comment "The contents of something like a post, including markup and embedded elements." ;
     owl:sameAs as2:content ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:e-description 
     rdf:type rdf:Property ;
     rdfs:label "e-description"@en ;
     rdfs:comment "A piece of text about something, according to somebody. (Eg. description or review of a product)."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:e-instructions
     rdf:type rdf:Property ;
     rdfs:label "e-instructions"@en ;
     rdfs:comment "The method of the recipe." ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-additional-name 
     rdf:type rdf:Property ;
     rdfs:label "p-additional-name"@en ;
     rdfs:comment "An additional name, like a middle name or middle initial."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-adr 
     rdf:type rdf:Property ;
     rdfs:label "p-adr"@en ;
     owl:sameAs as2:hasAddress, vcard:hasAddress ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-affiliation
     rdf:type rdf:Property ;
     rdfs:label "p-affiliation"@en ;
     rdfs:comment "An affiliation with an organisation."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-altitude
     rdf:type rdf:Property ;
     rdfs:label "p-altitude"@en ;
     owl:sameAs as2:altitude ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-author 
     rdf:type rdf:Property ;
     rdfs:label "p-author"@en ;
     owl:sameAs as2:attributedTo ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-best
     rdf:type rdf:Property ;
     rdfs:label "p-best"@en ;
     rdfs:comment "Define best rating value. Can be numerically lower than worst."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-brand
     rdf:type rdf:Property ;
     rdfs:label "p-brand"@en ;
     rdfs:comment "Manufacturer, can also be a nested h-card."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-category 
     rdf:type rdf:Property ;
     rdfs:label "p-category"@en ;
     rdfs:comment "Freeform categories or tags."@en ;
     owl:sameAs sioc:topic, vcard:hasCategory, as2:tag, foaf:topic ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-contact
     rdf:type rdf:Property ;
     rdfs:label "p-contact"@en ;
     rdfs:comment "Current contact info in an h-card."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-count
     rdf:type rdf:Property ;
     rdfs:label "p-count"@en ;
     rdfs:comment "Number of reviews aggregated."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-country-name 
     rdf:type rdf:Property ;
     rdfs:label "p-country-name"@en ;
     owl:sameAs vcard:hasCountryName ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-description 
     rdf:type rdf:Property ;
     rdfs:label "p-description"@en ;
     rdfs:comment "Description of an event."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-education
     rdf:type rdf:Property ;
     rdfs:label "p-education"@en ;
     rdfs:comment "An education h-calendar event, years, nested h-card of the school, location."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-experience
     rdf:type rdf:Property ;
     rdfs:label "p-experience"@en ;
     rdfs:comment "A job or other professional experience h-calendar event, years, nested h-card of the organization, location, job-title."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-extended-address 
     rdf:type rdf:Property ;
     rdfs:label "p-extended-address"@en ;
     rdfs:comment "Deprecated in Vcard." ;
     owl:sameAs vcard:extended-address ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-family-name 
     rdf:type rdf:Property ;
     rdfs:label "p-family-name"@en ;
     owl:sameAs foaf:familyName, vcard:family-name ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-gender-identity
     rdf:type rdf:Property ;
     rdfs:label "p-gender-identity"@en ;
     owl:sameAs vcard:hasGender ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-geo 
     rdf:type rdf:Property ;
     rdfs:label "p-geo"@en ;
     owl:sameAs vcard:hasGeo ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-given-name 
     rdf:type rdf:Property ;
     rdfs:label "p-given-name"@en ;
     owl:sameAs foaf:givenName, vcard:given-name ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-honorific-prefix 
     rdf:type rdf:Property ;
     rdfs:label "p-honorific-prefix"@en ;
     owl:sameAs vcard:honorific-prefix, foaf:title ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-honorific-suffix 
     rdf:type rdf:Property ;
     rdfs:label "p-honorific-suffix"@en ;
     owl:sameAs vcard:honorific-suffix ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-ingredient
     rdf:type rdf:Property ;
     rdfs:label "p-ingredient"@en ;
     rdfs:comment "Ddescribes one or more ingredients used in the recipe."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-item
     rdf:type rdf:Property ;
     rdfs:label "p-item"@en ;
     rdfs:comment "The thing been reviewed i.e. business or person (h-card), event (h-event), place (h-adr or h-geo), product (h-product), website, url, or other item (h-item)."@en ;
     # range h-card / h-event / h-adr / h-geo / h-product / website / url / h-item
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-job-title
     rdf:type rdf:Property ;
     rdfs:label "p-job-title"@en ;
     rdfs:comment "Previously 'title' in hCard, disambiguated."@en ;
     owl:sameAs vcard:title ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-label 
     rdf:type rdf:Property ;
     rdfs:label "p-label"@en ;
     rdfs:comment "Wiki says 'new in vCard4' but vCard4 says it's deprecated, and in any case was for address labels."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-latitude 
     rdf:type rdf:Property ;
     rdfs:label "p-latitude"@en ;
     owl:sameAs vcard:latitude, as2:latitude ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-locality 
     rdf:type rdf:Property ;
     rdfs:label "p-locality"@en ;
     owl:sameAs foaf:based_near, vcard:locality ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-location 
     rdf:type rdf:Property ;
     rdfs:label "p-location"@en ;
     owl:sameAs as2:location ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-longitude 
     rdf:type rdf:Property ;
     rdfs:label "p-longitude"@en ;
     owl:sameAs as2:longitude, vcard:longitude ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-name 
     rdf:type rdf:Property ;
     rdfs:label "p-name"@en ;
     rdfs:comment "Name of anything, eg. a post or a person."@en ;
     owl:sameAs as2:displayName, foaf:name ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-nickname 
     rdf:type rdf:Property ;
     rdfs:label "p-nickname"@en ;
     owl:sameAs vcard:nickname, foaf:nick ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-note 
     rdf:type rdf:Property ;
     rdfs:label "p-note"@en ;
     rdfs:comment "Not actually sure what this is." ;
     owl:sameAs as2:content ; # controversial?
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-nutrition
     rdf:type rdf:Property ;
     rdfs:label "p-nutrition"@en ;
     rdfs:comment "Nutritional information like calories, fat, dietary fiber etc."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-org 
     rdf:type rdf:Property ;
     rdfs:label "p-org"@en ;
     rdfs:comment "A related organisation"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-post-office-box 
     rdf:type rdf:Property ;
     rdfs:label "p-post-office-box"@en ;
     owl:sameAs vcard:post-office-box ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-postal-code 
     rdf:type rdf:Property ;
     rdfs:label "p-postal-code"@en ;
     owl:sameAs vcard:postal-code ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-price
     rdf:type rdf:Property ;
     rdfs:label "p-price"@en ;
     rdfs:comment "Retail price of the product."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-rating
     rdf:type rdf:Property ;
@@ -430,134 +430,134 @@ mf2:p-rating
     rdfs:comment "Value from 1-5 indicating a rating for the item (5 best)."@en ;
     owl:sameAs as2:rating ;
     # Note: as2 rating has additional restrictions that aren't mentioned in mf2
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-region 
     rdf:type rdf:Property ;
     rdfs:label "p-"@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-review
     rdf:type rdf:Property ;
     rdfs:label "p-region"@en ;
     owl:sameAs vcard:region ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-reviewer
     rdf:type rdf:Property ;
     rdfs:label "p-reviewer"@en ;
     rdfs:comment "Person who authored the review."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-role 
     rdf:type rdf:Property ;
     rdfs:label "p-role"@en ;
     rdfs:comment "This is entirely undescribed.. maybe same as vcard:role?"@en ;
     owl:sameAs vcard:role ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-sex
     rdf:type rdf:Property ;
     rdfs:label "p-sex"@en ;
     owl:sameAs vcard:hasGender ; #foaf:gender?
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-skill
     rdf:type rdf:Property ;
     rdfs:label "p-skill"@en ;
     rdfs:comment "A skill or ability, optionally including level and/or duration of experience."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-sort-string 
     rdf:type rdf:Property ;
     rdfs:label "p-sort-string"@en ;
     owl:sameAs vcard:sort-string ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-street-address 
     rdf:type rdf:Property ;
     rdfs:label "p-street-address"@en ;
     owl:sameAs vcard:street-address ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-summary
     rdf:type rdf:Property ;
     rdfs:label "p-summary"@en ;
     rdfs:comment "Provides a short summary or introduction."@en ;
     owl:sameAs as2:summary ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-tel 
     rdf:type rdf:Property ;
     rdfs:label "p-tel"@en ;
     owl:sameAs vcard:tel, foaf:phone ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-votes
     rdf:type rdf:Property ;
     rdfs:label "p-votes"@en ;
     rdfs:comment "Number of reviewers who have rated the product, thus contributing to the average rating."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-worst
     rdf:type rdf:Property ;
     rdfs:label "p-worst"@en ;
     rdfs:comment "Define worst rating value. can be numerically higher than best."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:p-yield
     rdf:type rdf:Property ;
     rdfs:label "p-yield"@en ;
     rdfs:comment "Specifies the quantity produced by the recipe, like how many persons it satisfyies."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
     
 mf2:u-email
     rdf:type rdf:Property ;
     rdfs:label "u-email"@en ;
     owl:sameAs foaf:mbox, vcard:email ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-identifier
     rdf:type rdf:Property ;
     rdfs:label "u-identifier"@en ;
     rdfs:comment "Includes type (e.g. mpn, upc, isbn, issn, sn, vin, sku etc.) and value."@en ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-impp
     rdf:type rdf:Property ;
     rdfs:label "u-impp"@en ;
     owl:sameAs vcard:hasInstantMessage ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-key 
     rdf:type rdf:Property ;
     rdfs:label "u-key"@en ;
     owl:sameAs vcard:key ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-logo 
     rdf:type rdf:Property ;
     rdfs:label "u-logo"@en ;
     owl:sameAs vcard:hasLogo, foaf:logo ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-photo
     rdf:type rdf:Property ;
     rdfs:label "u-photo"@en ;
     owl:sameAs as2:image, vcard:hasPhoto, foaf:depiction ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-uid 
     rdf:type rdf:Property ;
     rdfs:label "u-uid"@en ;
     owl:sameAs as2:id, vcard:hasUID ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-url
     rdf:type rdf:Property ;
     rdfs:label "u-url"@en ;
     owl:sameAs as2:url, vcard:hasUrl ;
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 ###############
 # Properties not documented on MF2 wiki but in common use.
@@ -568,24 +568,24 @@ mf2:u-in-reply-to
     rdfs:label "u-in-reply-to"@en ;
     owl:sameAs sioc:reply_of ;
     rdfs:comment "Subject is a post in reply to the object (eg. a comment or reference)."@en
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-like-of
     rdf:type rdf:Property ;
     rdfs:label "u-like-of"@en ;
     rdfs:comment "Subject is a post that indicates the author likes the object."@en
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-repost-of
     rdf:type rdf:Property ;
     rdfs:label "u-repost-of"@en ;
     rdfs:comment "Subject is a post that serves to repost (or share) the object."@en
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
 mf2:u-bookmark-of
     rdf:type rdf:Property ;
     rdfs:label "u-bookmark-of"@en ;
     rdfs:comment "Subject is a post that serves as a bookmark of the object."@en
-    rdfs:isDefinedBy <http://microformats.org/profile/> .
+    rdfs:isDefinedBy <http://microformats.org/terms/> .
 
     
