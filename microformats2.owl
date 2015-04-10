@@ -592,5 +592,5 @@ mf2:u-bookmark-of
 mf2:p-rsvp
     rdf:type rdf:Property ;
     rdfs:label "p-rsvp"@en ;
-    rdfs:comment "Response to an event post regarding attendance, eg. 'yes', 'no', 'maybe', 'see you there!', ..."@en ;
+    rdfs:comment "Response to an event post regarding attendance, eg. 'yes', 'no', 'maybe', 'see you there!', ... Subject is a post which is in-reply-to an event post."@en ;
     rdfs:isDefinedBy <http://microformats.org/terms#> .
