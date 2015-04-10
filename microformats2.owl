@@ -529,6 +529,13 @@ mf2:u-impp
     owl:sameAs vcard:hasInstantMessage ;
     rdfs:isDefinedBy <http://microformats.org/terms#> .
 
+mf2:u-in-reply-to
+    rdf:type rdf:Property ;
+    rdfs:label "u-in-reply-to"@en ;
+    owl:sameAs sioc:reply_of ;
+    rdfs:comment "Subject is a post in reply to the object (eg. a comment or reference)."@en ;
+    rdfs:isDefinedBy <http://microformats.org/terms#> .
+
 mf2:u-key 
     rdf:type rdf:Property ;
     rdfs:label "u-key"@en ;
@@ -561,31 +568,29 @@ mf2:u-url
 
 ###############
 # Properties not documented on MF2 wiki but in common use.
+# Some described at http://microformats.org/wiki/h-entry#Draft_Properties
 ###############
-
-mf2:u-in-reply-to
-    rdf:type rdf:Property ;
-    rdfs:label "u-in-reply-to"@en ;
-    owl:sameAs sioc:reply_of ;
-    rdfs:comment "Subject is a post in reply to the object (eg. a comment or reference)."@en
-    rdfs:isDefinedBy <http://microformats.org/terms#> .
 
 mf2:u-like-of
     rdf:type rdf:Property ;
     rdfs:label "u-like-of"@en ;
-    rdfs:comment "Subject is a post that indicates the author likes the object."@en
+    rdfs:comment "Subject is a post that indicates the author likes the object."@en ;
     rdfs:isDefinedBy <http://microformats.org/terms#> .
 
 mf2:u-repost-of
     rdf:type rdf:Property ;
     rdfs:label "u-repost-of"@en ;
-    rdfs:comment "Subject is a post that serves to repost (or share) the object."@en
+    rdfs:comment "Subject is a post that serves to repost (or share) the object."@en ;
     rdfs:isDefinedBy <http://microformats.org/terms#> .
 
 mf2:u-bookmark-of
     rdf:type rdf:Property ;
     rdfs:label "u-bookmark-of"@en ;
-    rdfs:comment "Subject is a post that serves as a bookmark of the object."@en
+    rdfs:comment "Subject is a post that serves as a bookmark of the object."@en ;
     rdfs:isDefinedBy <http://microformats.org/terms#> .
-
     
+mf2:p-rsvp
+    rdf:type rdf:Property ;
+    rdfs:label "p-rsvp"@en ;
+    rdfs:comment "Response to an event post regarding attendance, eg. 'yes', 'no', 'maybe', 'see you there!', ..."@en ;
+    rdfs:isDefinedBy <http://microformats.org/terms#> .
