@@ -15,10 +15,10 @@
 <http://microformats.org/profile/>
   a owl:Ontology ;
   dct:title "Microformats2" ;
-  owl:versionInfo "0.1" ;
-  dct:description "Microformats2 is the simplest way to markup structured information in HTML. Microformats2 improves ease of use and implementation for both authors (publishers) and developers (parser implementers)." ;
+  owl:versionInfo "0.2" ;
+  dct:description "Microformats2 is the simplest way to markup structured information in HTML. Microformats2 improves ease of use and implementation for both authors (publishers) and developers (parser implementers). http://microformats.org/wiki/microformats2" ;
   dct:created "2015-03-19" ;
-  dct:modified "2015-03-19" ;
+  dct:modified "2015-04-10" ;
   rdfs:seeAlso <http://microformats.org/wiki/microformats2-parsing-rdf> .
 
 ###############
@@ -558,3 +558,34 @@ mf2:u-url
     rdfs:label "u-url"@en ;
     owl:sameAs as2:url, vcard:hasUrl ;
     rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+###############
+# Properties not documented on MF2 wiki but in common use.
+###############
+
+mf2:u-in-reply-to
+    rdf:type rdf:Property ;
+    rdfs:label "u-in-reply-to"@en ;
+    owl:sameAs sioc:reply_of ;
+    rdfs:comment "Subject is a post in reply to the object (eg. a comment or reference)."@en
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:u-like-of
+    rdf:type rdf:Property ;
+    rdfs:label "u-like-of"@en ;
+    rdfs:comment "Subject is a post that indicates the author likes the object."@en
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:u-repost-of
+    rdf:type rdf:Property ;
+    rdfs:label "u-repost-of"@en ;
+    rdfs:comment "Subject is a post that serves to repost (or share) the object."@en
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+mf2:u-bookmark-of
+    rdf:type rdf:Property ;
+    rdfs:label "u-bookmark-of"@en ;
+    rdfs:comment "Subject is a post that serves as a bookmark of the object."@en
+    rdfs:isDefinedBy <http://microformats.org/profile/> .
+
+    
