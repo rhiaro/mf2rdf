@@ -11,5 +11,4 @@ Prefix is `http://microformats.org/profile/` as per [MF2 RDF wiki page](http://m
 
 ## Notes
 
-* Is `dt-reviewed` same as `dt-published`?
-* 
+See [http://rhiaro.co.uk/2015/03/microformats2-rdf](Microformats2 RDF Ontology blog post)
