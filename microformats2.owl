@@ -23,6 +23,8 @@
 
 ###############
 # Classes     #
+# Todo:
+# * Map to existing with owl:equivalentClass (FOAF, SIOC, DC, VCard, AS2.0)
 ###############
 
 mf2:h-adr
@@ -38,7 +40,7 @@ mf2:h-card
   rdfs:label "h-card"@en ;
   rdfs:comment "An h-card is a description of a person or an organization."@en ;
   foaf:isPrimaryTopicOf wiki:h-card ;
-  owl:sameAs vcard:VCard, foaf:Agent ;
+  owl:equivalentClass vcard:VCard, foaf:Agent ;
   rdfs:seeAlso wikimf2:h-card ;
   rdfs:isDefinedBy <http://microformats.org/profile#> .
 
@@ -118,34 +120,34 @@ mf2:h-review-aggregate
 # Properties  #
 #
 # Todo:
-# * Map to existing with sameAs (FOAF, DC, VCard, AS2.0)
+# * Map to existing with owl:equivalentProperty (FOAF, SIOC,  DC, VCard, AS2.0)
 ###############
 
 mf2:anniversary
     rdf:type rdf:Property ;
     rdfs:label "anniversary"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs vcard:anniversary ;
+    owl:equivalentPropert vcard:anniversary ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:bday
     rdf:type rdf:Property ;
     rdfs:label "bday"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs vcard:bday ;
+    owl:equivalentPropert vcard:bday ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:duration
     rdf:type rdf:Property ;
     rdfs:label "duration"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs as2:duration ;
+    owl:equivalentPropert as2:duration ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:end
     rdf:type rdf:Property ;
     rdfs:label "end"@en ;
-    owl:sameAs as2:endTime ;
+    owl:equivalentPropert as2:endTime ;
     rdfs:range xsd:DateTime ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
@@ -153,7 +155,7 @@ mf2:published
     rdf:type rdf:Property ;
     rdfs:label "published"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs dc:published, as2:published ;
+    owl:equivalentPropert dc:published, as2:published ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:reviewed
@@ -167,21 +169,21 @@ mf2:start
     rdf:type rdf:Property ;
     rdfs:label "start"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs as2:startTime ;
+    owl:equivalentPropert as2:startTime ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:updated
     rdf:type rdf:Property ;
     rdfs:label "updated"@en ;
     rdfs:range xsd:DateTime ;
-    owl:sameAs dc:modified, as2:updated ;
+    owl:equivalentPropert dc:modified, as2:updated ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:content
     rdf:type rdf:Property ;
     rdfs:label "content"@en ;
     rdfs:comment "The contents of something like a post, including markup and embedded elements." ;
-    owl:sameAs as2:content ;
+    owl:equivalentPropert as2:content ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:description
@@ -205,7 +207,7 @@ mf2:additional-name
 mf2:adr
     rdf:type rdf:Property ;
     rdfs:label "adr"@en ;
-    owl:sameAs as2:hasAddress, vcard:hasAddress ;
+    owl:equivalentPropert as2:hasAddress, vcard:hasAddress ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:affiliation
@@ -217,13 +219,13 @@ mf2:affiliation
 mf2:altitude
     rdf:type rdf:Property ;
     rdfs:label "altitude"@en ;
-    owl:sameAs as2:altitude ;
+    owl:equivalentPropert as2:altitude ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:author
     rdf:type rdf:Property ;
     rdfs:label "author"@en ;
-    owl:sameAs as2:attributedTo ;
+    owl:equivalentPropert as2:attributedTo ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:best
@@ -242,7 +244,7 @@ mf2:category
     rdf:type rdf:Property ;
     rdfs:label "category"@en ;
     rdfs:comment "Freeform categories or tags."@en ;
-    owl:sameAs sioc:topic, vcard:hasCategory, as2:tag, foaf:topic ;
+    owl:equivalentPropert sioc:topic, vcard:hasCategory, as2:tag, foaf:topic ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:contact
@@ -260,7 +262,7 @@ mf2:count
 mf2:country-name
     rdf:type rdf:Property ;
     rdfs:label "country-name"@en ;
-    owl:sameAs vcard:hasCountryName ;
+    owl:equivalentPropert vcard:hasCountryName ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:education
@@ -279,43 +281,43 @@ mf2:extended-address
     rdf:type rdf:Property ;
     rdfs:label "extended-address"@en ;
     rdfs:comment "Deprecated in Vcard." ;
-    owl:sameAs vcard:extended-address ;
+    owl:equivalentPropert vcard:extended-address ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:family-name
     rdf:type rdf:Property ;
     rdfs:label "family-name"@en ;
-    owl:sameAs foaf:familyName, vcard:family-name ;
+    owl:equivalentPropert foaf:familyName, vcard:family-name ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:gender-identity
     rdf:type rdf:Property ;
     rdfs:label "gender-identity"@en ;
-    owl:sameAs vcard:hasGender ;
+    owl:equivalentPropert vcard:hasGender ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:geo
     rdf:type rdf:Property ;
     rdfs:label "geo"@en ;
-    owl:sameAs vcard:hasGeo ;
+    owl:equivalentPropert vcard:hasGeo ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:given-name
     rdf:type rdf:Property ;
     rdfs:label "given-name"@en ;
-    owl:sameAs foaf:givenName, vcard:given-name ;
+    owl:equivalentPropert foaf:givenName, vcard:given-name ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:honorific-prefix
     rdf:type rdf:Property ;
     rdfs:label "honorific-prefix"@en ;
-    owl:sameAs vcard:honorific-prefix, foaf:title ;
+    owl:equivalentPropert vcard:honorific-prefix, foaf:title ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:honorific-suffix
     rdf:type rdf:Property ;
     rdfs:label "honorific-suffix"@en ;
-    owl:sameAs vcard:honorific-suffix ;
+    owl:equivalentPropert vcard:honorific-suffix ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:ingredient
@@ -335,7 +337,7 @@ mf2:job-title
     rdf:type rdf:Property ;
     rdfs:label "job-title"@en ;
     rdfs:comment "Previously 'title' in hCard, disambiguated."@en ;
-    owl:sameAs vcard:title ;
+    owl:equivalentPropert vcard:title ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:label
@@ -347,45 +349,45 @@ mf2:label
 mf2:latitude
     rdf:type rdf:Property ;
     rdfs:label "latitude"@en ;
-    owl:sameAs vcard:latitude, as2:latitude ;
+    owl:equivalentPropert vcard:latitude, as2:latitude ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:locality
     rdf:type rdf:Property ;
     rdfs:label "locality"@en ;
-    owl:sameAs foaf:based_near, vcard:locality ;
+    owl:equivalentPropert foaf:based_near, vcard:locality ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:location
     rdf:type rdf:Property ;
     rdfs:label "location"@en ;
-    owl:sameAs as2:location ;
+    owl:equivalentPropert as2:location ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:longitude
     rdf:type rdf:Property ;
     rdfs:label "longitude"@en ;
-    owl:sameAs as2:longitude, vcard:longitude ;
+    owl:equivalentPropert as2:longitude, vcard:longitude ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:name
     rdf:type rdf:Property ;
     rdfs:label "name"@en ;
     rdfs:comment "Name of anything, eg. a post or a person."@en ;
-    owl:sameAs as2:displayName, foaf:name ;
+    owl:equivalentPropert as2:displayName, foaf:name ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:nickname
     rdf:type rdf:Property ;
     rdfs:label "nickname"@en ;
-    owl:sameAs vcard:nickname, foaf:nick ;
+    owl:equivalentPropert vcard:nickname, foaf:nick ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:note
     rdf:type rdf:Property ;
     rdfs:label "note"@en ;
     rdfs:comment "Not actually sure what this is." ;
-    owl:sameAs as2:content ; # controversial?
+    owl:equivalentPropert as2:content ; # controversial?
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:nutrition
@@ -403,13 +405,13 @@ mf2:org
 mf2:post-officbox
     rdf:type rdf:Property ;
     rdfs:label "post-officbox"@en ;
-    owl:sameAs vcard:post-officbox ;
+    owl:equivalentPropert vcard:post-officbox ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:postal-code
     rdf:type rdf:Property ;
     rdfs:label "postal-code"@en ;
-    owl:sameAs vcard:postal-code ;
+    owl:equivalentPropert vcard:postal-code ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:price
@@ -422,7 +424,7 @@ mf2:rating
     rdf:type rdf:Property ;
     rdfs:label "rating"@en ;
     rdfs:comment "Value from 1-5 indicating a rating for the item (5 best)."@en ;
-    owl:sameAs as2:rating ;
+    owl:equivalentPropert as2:rating ;
     # Note: as2 rating has additional restrictions that aren't mentioned in mf2
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
@@ -434,7 +436,7 @@ mf2:region
 mf2:review
     rdf:type rdf:Property ;
     rdfs:label "region"@en ;
-    owl:sameAs vcard:region ;
+    owl:equivalentPropert vcard:region ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:reviewer
@@ -447,13 +449,13 @@ mf2:role
     rdf:type rdf:Property ;
     rdfs:label "role"@en ;
     rdfs:comment "This is entirely undescribed.. maybe same as vcard:role?"@en ;
-    owl:sameAs vcard:role ;
+    owl:equivalentPropert vcard:role ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:sex
     rdf:type rdf:Property ;
     rdfs:label "sex"@en ;
-    owl:sameAs vcard:hasGender ; #foaf:gender?
+    owl:equivalentPropert vcard:hasGender ; #foaf:gender?
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:skill
@@ -465,26 +467,26 @@ mf2:skill
 mf2:sort-string
     rdf:type rdf:Property ;
     rdfs:label "sort-string"@en ;
-    owl:sameAs vcard:sort-string ;
+    owl:equivalentPropert vcard:sort-string ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:street-address
     rdf:type rdf:Property ;
     rdfs:label "street-address"@en ;
-    owl:sameAs vcard:street-address ;
+    owl:equivalentPropert vcard:street-address ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:summary
     rdf:type rdf:Property ;
     rdfs:label "summary"@en ;
     rdfs:comment "Provides a short summary or introduction."@en ;
-    owl:sameAs as2:summary ;
+    owl:equivalentPropert as2:summary ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:tel
     rdf:type rdf:Property ;
     rdfs:label "tel"@en ;
-    owl:sameAs vcard:tel, foaf:phone ;
+    owl:equivalentPropert vcard:tel, foaf:phone ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:votes
@@ -508,7 +510,7 @@ mf2:yield
 mf2:email
     rdf:type rdf:Property ;
     rdfs:label "email"@en ;
-    owl:sameAs foaf:mbox, vcard:email ;
+    owl:equivalentPropert foaf:mbox, vcard:email ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:identifier
@@ -520,44 +522,44 @@ mf2:identifier
 mf2:impp
     rdf:type rdf:Property ;
     rdfs:label "impp"@en ;
-    owl:sameAs vcard:hasInstantMessage ;
+    owl:equivalentPropert vcard:hasInstantMessage ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:in-reply-to
     rdf:type rdf:Property ;
     rdfs:label "in-reply-to"@en ;
-    owl:sameAs sioc:reply_of ;
+    owl:equivalentPropert sioc:reply_of ;
     rdfs:comment "Subject is a post in reply to the object (eg. a comment or reference)."@en ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:key
     rdf:type rdf:Property ;
     rdfs:label "key"@en ;
-    owl:sameAs vcard:key ;
+    owl:equivalentPropert vcard:key ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:logo
     rdf:type rdf:Property ;
     rdfs:label "logo"@en ;
-    owl:sameAs vcard:hasLogo, foaf:logo ;
+    owl:equivalentPropert vcard:hasLogo, foaf:logo ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:photo
     rdf:type rdf:Property ;
     rdfs:label "photo"@en ;
-    owl:sameAs as2:image, vcard:hasPhoto, foaf:depiction ;
+    owl:equivalentPropert as2:image, vcard:hasPhoto, foaf:depiction ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:uid
     rdf:type rdf:Property ;
     rdfs:label "uid"@en ;
-    owl:sameAs as2:id, vcard:hasUID ;
+    owl:equivalentPropert as2:id, vcard:hasUID ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 mf2:url
     rdf:type rdf:Property ;
     rdfs:label "url"@en ;
-    owl:sameAs as2:url, vcard:hasUrl ;
+    owl:equivalentPropert as2:url, vcard:hasUrl ;
     rdfs:isDefinedBy <http://microformats.org/profile#> .
 
 ###############
